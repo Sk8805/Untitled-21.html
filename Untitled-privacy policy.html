@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #F9ED32;
+            font-size: 25px;
+            border-bottom: 2px #F9ED32 solid;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #252525;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .footer{
+            border-top: 2px solid; 
+            margin-top: 1000px;
+            height: 150px;
+            background-color: #252525;
+        }
+        .foot{
+            font-size: 14px;
+            color: #252525;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            text-decoration:  #252525 underline;
+        }
+        .foot:hover{
+            opacity: 1;
+        }
+        .logo2{
+            width: 100px;
+            margin-left: -460px;
+            margin-top: px;
+            animation-name: logo;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .logo2:hover{
+            width: 120px
+        }
+        @keyframes logo{
+            from{scale:0;}
+            to{scale:1;}
+        }
+        .Vehicle1{
+            margin-left: 500px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle1:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle2{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle2:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle3{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle3:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .navbar2{
+            margin-top: -18px;
+        }
+        .foottext{
+            font-size: 18px;
+            color: #131313;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+        }
+        .topbar{
+            background-color: #252525;
+            padding: 8px;
+            margin-top: -10px;
+            width: 100%;
+            margin-left: -10px;
+        }
+        .head{
+            text-align: center;
+            background-size: cover;
+            margin-top: 60px;
+            font-weight: 700;
+            text-decoration: 3px #F9ED32 underline;
+            font-size: 35px;
+        }
+        h2{
+            text-decoration: 2px #F9ED32 underline;
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .mail{
+            color: #252525;
+            text-decoration: 2px #FFFFFF underline;
+            opacity: 0.6;
+        }
+        .mail:hover{
+            opacity: 1;
+        }
+    </style>
+    <nav class="topbar">
+        <ul>
+            <center><a href="Untitled-21.html" target="_blank"><img src="Rhyno logo(4).png" class="logo2"></a></center>
+            <li><a href="Untitled-21.html">Home</a></li>
+            <li><a href="Untitled-21(2).html">About Us</a></li>
+            <li class="dropdown">
+                <a href="Untitled-21(4).html" class="dropbtn" target="_blank">Products</a>
+                <div class="dropdown-content">
+                    <a href="Untitled-21(4)(2).html" target="_blank">SE03 Lite</a>
+                    <a href="Untitled-21(4)(1).html" target="_blank">SE03</a>
+                    <a href="Untitled-21(4)(3).html" target="_blank">SE03 Max</a>
+                    <a href="Untitled-21(4)(4).html" target="_blank">Compare All</a>
+                </div>
+            </li>
+            <li><a href="Untitled-21(3).html">Contact Us</a></li>
+            <li><a href="Untitled-pre book.html" target="_blank">Pre-book Now</a></li>
+            <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+            &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+    </nav><br><br>
+    <div class="navbar2">
+        <a href="Untitled-21(4)(2).html" class="Vehicle1">SE03 Lite</a></center>
+        <a href="Untitled-21(4)(1).html" class="Vehicle2">SEO3</a></center>
+        <a href="Untitled-21(4)(3).html" class="Vehicle3">SEO3 Max</a></center>
+    </div>
+    <h1 class="head">Privacy Policy</h1>
+    <p>This is the Privacy Policy for Rhyno EV</p>
+    <h2>What Are Cookies</h2>
+    <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also guide how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+    <br><p>For more general information on cookies see the relatedweb article on Cookies.</p>
+    <h2>How We Use Cookies</h2>
+    <p>We use cookies for a variety of reasons detailed below. Unfortunately, in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site. It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.</p>
+    <h2>Disabling Cookies</h2>
+    <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of this site. Therefore it is recommended that you do not disable cookies.</p>
+    <h2>The Cookies We Set</h2>
+    <p>● Account related cookies</p>
+    <br><p>If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+    <br><p>● Email newsletters related cookies</p>
+    <br><p>This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users.</p>
+    <br><p>● Orders processing related cookies</p>
+    <br><p>This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly.</p>
+    <br><p>● Forms related cookies</p>
+    <br><p>When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.</p>
+    <br><p>● Site preferences cookies</p>
+    <br><p>In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
+    <br><h2>Third Party Cookies</h2>
+    <br><p>In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+    <br><p>● This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+    <br><p>● From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features, these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+    <br><p>● As we sell products it's important for us to understand statistics about how many of the visitors to our site actually make a purchase and as such this is the kind of data that these cookies will track. This is important to you as it means that we can accurately make business predictions that allow us to monitor our advertising and product costs to ensure the best possible price.</p>
+    <br><p>● Several partners advertise on our behalf and affiliate tracking cookies simply allow us to see if our customers have come to the site through one of our partner sites so that we can credit them appropriately and where applicable allow our affiliate partners to provide any bonus that they may provide you for making a purchase.</p>
+    <br><p>● We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work, the social media sites will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+    <br><h2>Disclaimer</h2>
+    <br><p>Don’t accept the policy if you disagree with how we will use your personal data.</p>
+    <br><p>Company shall not be liable for any loss or damage sustained by reason of any disclosure, if at all required or occurred, of any information concerning the user's account and/or their verification process and particulars nor for any error, omission, or inaccuracy with respect to any information so disclosed and used whether or not in pursuance of any legal process. The terms in this policy may be changed / altered / modified by Company at any time. Company is free to offer its services to any client/prospective client without restriction.</p>
+    <br><p>By registering or by using this Site, you explicitly accept, without limitation or qualification, the collection, use and transfer of the Personal Information provided by you in the manner described in this Privacy Policy.</p>
+    <br><p>Please read this Privacy Policy carefully as it affects your rights and liabilities under law. If you do not accept the Privacy Policy stated herein or disagree with the way we collect and process personal information collected on the Site, please do not use it.</p>
+    <br><p>However if you are looking for more information then you can contact us through one of our preferred contact methods:</p>
+    <br><p>Email:- <a href="mailto:pwrbuster-info@rhyno.in" class="mail">info@rhyno.in</a></p>
+
+    <center><div class="footer">
+        <a href="Untitled-privacy policy.html" class="foot">Privacy Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(3).html" class="foot">Contact us</a><a class="foot">|</a>
+        <a href="Untitled-21(4).html" class="foot">Products</a><a class="foot">|</a>
+        <a href="https://www.linkedin.com/company/rhyno-wheels/"target="_blank" class="foot">Career</a><a class="foot">|</a>
+        <a href="Untitled-refund policy.html" class="foot">Refund Policy</a><a class="foot">|</a>
+        <a href="Untitled-website policy.html" class="foot">Website Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(rentals).html" class="foot">Rentals</a>
+        <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+        &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+        <br><p class="foottext">Rhyno EV. &copy; all rights reserved 2024.</p>
+    </div></center>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #F9ED32;
+            font-size: 25px;
+            border-bottom: 2px #F9ED32 solid;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #252525;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .footer{
+            border-top: 2px solid; 
+            margin-top: 1000px;
+            height: 150px;
+            background-color: #252525;
+        }
+        .foot{
+            font-size: 14px;
+            color: #252525;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            text-decoration:  #252525 underline;
+        }
+        .foot:hover{
+            opacity: 1;
+        }
+        .logo2{
+            width: 100px;
+            margin-left: -460px;
+            margin-top: px;
+            animation-name: logo;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .logo2:hover{
+            width: 120px
+        }
+        @keyframes logo{
+            from{scale:0;}
+            to{scale:1;}
+        }
+        .Vehicle1{
+            margin-left: 500px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle1:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle2{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle2:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle3{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle3:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .navbar2{
+            margin-top: -18px;
+        }
+        .foottext{
+            font-size: 18px;
+            color: #131313;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+        }
+        .topbar{
+            background-color: #252525;
+            padding: 8px;
+            margin-top: -10px;
+            width: 100%;
+            margin-left: -10px;
+        }
+        .head{
+            text-align: center;
+            background-size: cover;
+            margin-top: 60px;
+            font-weight: 700;
+            text-decoration: 3px #F9ED32 underline;
+            font-size: 35px;
+        }
+        h2{
+            text-decoration: 2px #F9ED32 underline;
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .mail{
+            color: #252525;
+            text-decoration: 2px #FFFFFF underline;
+            opacity: 0.6;
+        }
+        .mail:hover{
+            opacity: 1;
+        }
+    </style>
+    <nav class="topbar">
+        <ul>
+            <center><a href="Untitled-21.html" target="_blank"><img src="Rhyno logo(4).png" class="logo2"></a></center>
+            <li><a href="Untitled-21.html">Home</a></li>
+            <li><a href="Untitled-21(2).html">About Us</a></li>
+            <li class="dropdown">
+                <a href="Untitled-21(4).html" class="dropbtn" target="_blank">Products</a>
+                <div class="dropdown-content">
+                    <a href="Untitled-21(4)(2).html" target="_blank">SE03 Lite</a>
+                    <a href="Untitled-21(4)(1).html" target="_blank">SE03</a>
+                    <a href="Untitled-21(4)(3).html" target="_blank">SE03 Max</a>
+                    <a href="Untitled-21(4)(4).html" target="_blank">Compare All</a>
+                </div>
+            </li>
+            <li><a href="Untitled-21(3).html">Contact Us</a></li>
+            <li><a href="Untitled-pre book.html" target="_blank">Pre-book Now</a></li>
+            <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+            &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+    </nav><br><br>
+    <div class="navbar2">
+        <a href="Untitled-21(4)(2).html" class="Vehicle1">SE03 Lite</a></center>
+        <a href="Untitled-21(4)(1).html" class="Vehicle2">SEO3</a></center>
+        <a href="Untitled-21(4)(3).html" class="Vehicle3">SEO3 Max</a></center>
+    </div>
+    <h1 class="head">Website Policy</h1>
+    <p>Your use of the Website and services and tools are governed by the following terms and conditions ("Terms of Use") as applicable to the Website including the applicable policies which are incorporated herein by way of reference. If You transact on the Website/ application/forum, You shall be subject to the policies that are applicable to the Website/application/ forum for such transaction. By mere use of the Website/Applications/Forum, You shall be contracting with Company and these terms and conditions including the policies constitute your binding obligations, with the Website/Applications/Forum.</p>
+    <br><p>For the purpose of these Terms of Use, wherever the context so requires "You" or "User" shall mean any natural or legal person who has agreed to become a user of the Website by providing Registration Data while registering on the Website as Registered User using the computer systems. This Website allows the User to surf the Website. The term "We", "Us", "Our" shall mean Company.</p>
+    <h2>Elligibility to use</h2>
+    <br><p>Use of the Website is available only to persons who can form legally binding contracts under Indian Contract Act, 1872. Persons who are "incompetent to contract" within the meaning of the Indian Contract Act, 1872 including minors, un-discharged insolvents etc. are not eligible to use the Website. If you are a minor i.e. under the age of 18 years, you shall not register as a User of the Company website and shall not transact on or use the Website. As a minor if you wish to use or transact on Website, such use or transaction may be made by your legal guardian or parents on the Website. Company reserves the right to refuse You access to the Website if it is brought to Company's notice or if it is discovered that you are under the age of 18 years. By visiting Company Website or accepting these Terms of Use, You represent and warrant to Company that You are 18 years of age or older, and that You have the right, authority and capacity to use the Website and agree to and abide by these Terms of Use. You also represent and warrant to the Company that You will use the Website in a manner consistent with any and all applicable laws and regulations. </p>
+    <br><p>Company reserves the right to refuse access to use the Services offered at the Website to new Users or to terminate access granted to existing Users at any time without according any reasons for doing so.</p>
+    <br><h2>Your use of Company Website/Applications/Forum</h2>
+    <br><p>The Company offers its services to different categories. Users of each of the categories are required to register themselves on the Website/Applications/Forum and make an individual account with Company in order to receive its services. Such an account is accessible by the unique username and password provided to the User by the Company when they chose to register themselves on the Website/Applications/Forum. The said username and password should be kept highly confidential and should not be disclosed to any third party. You agree to accept responsibility for all activities that occur under your account or password. You should take all necessary steps to ensure that the password is kept confidential and secure and should inform us immediately if you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be used in an unauthorized manner.</p>
+    <br><p>You shall ensure that the Account Information provided by You in the Website/Applications/Forum's registration form is complete, accurate and up-to-date. Use of another user's Account Information for availing the Services is expressly prohibited.</p>
+    <br><p>If You provide any information that is untrue, inaccurate, not current or incomplete (or becomes untrue, inaccurate, not current or incomplete), or Company has reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, Company has the right to suspend or terminate Your Account and refuse any and all current or future use of the Website (or any portion thereof).</p>
+    <br><h2>Privacy and Information Protection</h2>
+    <br><p>Please review our Privacy Policy, which also governs your visit to this Site, to understand our internal policies and practices. The personal information / data provided to us by you during the course of usage of our website will be treated as strictly confidential and in accordance with the Privacy Policy and applicable laws and regulations. If you object to your information being transferred or used, please do not use the website.</p>
+    <br><h2>Rights of use</h2>
+    <br><p>Company grants you limited rights to access and make personal use of this Website/Applications/Forum, but not to download (other than page caching) or modify it, or any portion of it. These rights do not include any commercial use of this Website/Applications/Forum or its contents; any collection and use of any content, descriptions, or prices; any derivative use of this Website/Applications/Forum or its contents; any downloading or copying of account information for the benefit of a third-party; or any use of data mining, robots, or similar data gathering and extraction tools.</p>
+    <br><p>This Website/Applications/Forum or any portion of this Website/Applications/Forum (including but not limited to any copyrighted material, trademarks, or other proprietary information) may not be reproduced, duplicated, copied, sold, resold, visited, distributed or otherwise exploited for any commercial purpose.</p>
+    <br><h2>Vulnerability</h2>
+    <br><p>We have a muti-layered security controls to our Website/Applications/Forum, products and services offered by us. We investigate all credible reports of cybersecurity vulnerabilities that may affect our products or services. If you believe that you have information about a potential cybersecurity vulnerability related our Website/Applications/Forum or products or services offered by us, please notify us by sending an email to <a href="mailto:pwrbuster-info@rhyno.in" class="mail">info@rhyno.in</a></p>
+
+    <center><div class="footer">
+        <a href="Untitled-privacy policy.html" class="foot">Privacy Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(3).html" class="foot">Contact us</a><a class="foot">|</a>
+        <a href="Untitled-21(4).html" class="foot">Products</a><a class="foot">|</a>
+        <a href="https://www.linkedin.com/company/rhyno-wheels/"target="_blank" class="foot">Career</a><a class="foot">|</a>
+        <a href="Untitled-refund policy.html" class="foot">Refund Policy</a><a class="foot">|</a>
+        <a href="Untitled-website policy.html" class="foot">Website Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(rentals).html" class="foot">Rentals</a>
+        <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+        &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+        <br><p class="foottext">Rhyno EV. &copy; all rights reserved 2024.</p>
+    </div></center>
+</body>
+</html>

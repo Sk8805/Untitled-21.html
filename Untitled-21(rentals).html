@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #F9ED32;
+            font-size: 25px;
+            border-bottom: 2px #F9ED32 solid;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #252525;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .head{
+            text-align: center;
+            background-size: cover;
+            margin-top: 60px;
+            font-weight: 700;
+            text-decoration: 3px #F9ED32 underline;
+            font-size: 35px;
+        }
+        .text1{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+        * {box-sizing: border-box;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+        .numbertext {
+        color: #2C2A2A;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #2C2A2A;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+        .active {
+        background-color: #F9ED32;
+        }
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+        @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+        }
+        .footer{
+            border-top: 2px solid; 
+            margin-top: 1000px;
+            height: 150px;
+            background-color: #252525;
+        }
+        .foot{
+            font-size: 14px;
+            color: #252525;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            text-decoration:  #252525 underline;
+        }
+        .foot:hover{
+            opacity: 1;
+        }
+        .logo2{
+            width: 100px;
+            margin-left: -460px;
+            margin-top: px;
+            animation-name: logo;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        .logo2:hover{
+            width: 120px
+        }
+        @keyframes logo{
+            from{scale:0;}
+            to{scale:1;}
+        }
+        .text2{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 80px;
+            font-weight: 900;
+        }
+        .text3{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 150px;
+            font-weight: 800;
+            animation-name: text3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes text3{
+            from{scale: 0.5;}
+            to{scale: 1;}
+        }
+        .Vehicle1{
+            margin-left: 500px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle1:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle2{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle2:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .Vehicle3{
+            margin-left: 30px;
+            text-decoration: #FFFFFF underline;
+            font-weight: 600;
+            color: #252525;
+            opacity: 0.6;
+        }
+        .Vehicle3:hover{
+            opacity: 1;
+            font-size: 20px;
+        }
+        .navbar2{
+            margin-top: -18px;
+        }
+        .foottext{
+            font-size: 18px;
+            color: #131313;
+            line-height: 50px;
+            margin-left: 20px;
+            color: #FFFFFF;
+        }
+        .topbar{
+            background-color: #252525;
+            padding: 10px;
+            margin-top: -10px;
+            width: 100%;
+            margin-left: -10px;
+        }
+    </style>
+    <nav class="topbar">
+        <ul>
+            <center><a href="Untitled-21.html" target="_blank"><img src="Rhyno logo(4).png" class="logo2"></a></center>
+            <li><a href="Untitled-21.html">Home</a></li>
+            <li><a href="Untitled-21(2).html">About Us</a></li>
+            <li class="dropdown">
+                <a href="Untitled-21(4).html" class="dropbtn" target="_blank">Products</a>
+                <div class="dropdown-content">
+                    <a href="Untitled-21(4)(2).html" target="_blank">SE03 Lite</a>
+                    <a href="Untitled-21(4)(1).html" target="_blank">SE03</a>
+                    <a href="Untitled-21(4)(3).html" target="_blank">SE03 Max</a>
+                    <a href="Untitled-21(4)(4).html" target="_blank">Compare All</a>
+                </div>
+            </li>
+            <li><a href="Untitled-21(3).html">Contact Us</a></li>
+            <li><a href="Untitled-pre book.html" target="_blank">Pre-book Now</a></li>
+            <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+            &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+    </nav><br><br>
+    <div class="navbar2">
+        <a href="Untitled-21(4)(2).html" class="Vehicle1">SE03 Lite</a></center>
+        <a href="Untitled-21(4)(1).html" class="Vehicle2">SEO3</a></center>
+        <a href="Untitled-21(4)(3).html" class="Vehicle3">SEO3 Max</a></center>
+    </div>
+    <h1 class="head">Discover your escape & elevate your experience with our rentals</h1>
+    <p class="text1">Explore the roars of Rhyno at your own pace with our rental options! Test the waters with our flexible rental model, available for a week or a month, allowing you to experience the Rhyno first hand before committing. Simply visit our authorized dealerships to unlock this opportunity.</p>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <center><img src="SEO3 Lite(2).png" style="width:80%"></center>
+        </div>  
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <center><img src="SEO3.png" style="width:60%"></center>
+        </div>     
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <center><img src="SEO3 max.png" style="width:60%"></center>
+        </div>    
+        </div>
+        <br>  
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>    
+        <script>
+        let slideIndex = 0;
+        showSlides();     
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000);
+        }
+        </script>
+    <p class="text3">Experience the Future of Mobility – Rent Your EV Today!</p>
+    <p class="text2">Download our rental app</p>
+    <center><a href=""><i class="fa-brands fa-google-play fa-xl" style="color: #284067;" class="playstore"></i></a>Play Store</center>
+    <br><center><a href=""><i class="fa-brands fa-app-store-ios fa-xl" style="color: #1b2b46;"></i></a>App Store</center>
+    <center><div class="footer">
+        <a href="Untitled-privacy policy.html" class="foot">Privacy Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(3).html" class="foot">Contact us</a><a class="foot">|</a>
+        <a href="Untitled-21(4).html" class="foot">Products</a><a class="foot">|</a>
+        <a href="https://www.linkedin.com/company/rhyno-wheels/"target="_blank" class="foot">Career</a><a class="foot">|</a>
+        <a href="Untitled-refund policy.html" class="foot">Refund Policy</a><a class="foot">|</a>
+        <a href="Untitled-website policy.html" class="foot">Website Policy</a><a class="foot">|</a>
+        <a href="Untitled-21(rentals).html" class="foot">Rentals</a>
+        <br><a href="https://www.instagram.com/rhyno.in/" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+        &nbsp;<a href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+        <br><p class="foottext">Rhyno EV. &copy; all rights reserved 2024.</p>
+    </div></center>
+</body>
+</html>
